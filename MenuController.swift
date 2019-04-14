@@ -12,13 +12,16 @@ class MenuController {
     let baseURL = URL(string: "http://localhost:8090/")!
     
     func fetchCategories(completion: @escaping([String]?) -> Void){
+        
         let categoryURL = baseURL.appendingPathComponent("categories")
+        print(categoryURL)
         let task = URLSession.shared.dataTask(with: categoryURL) { (data, response, error) in
             
             if let data = data, let jsonDictionary = try? JSONSerialization.jsonObject(with: data) as? [String:Any], let categories = jsonDictionary["categories"] as? [String] {
                 completion(categories)
             } else {
                 completion(nil)
+                print("Hello")
             }
         }
         task.resume()
@@ -28,6 +31,7 @@ class MenuController {
         
         let initialMenuURL = baseURL.appendingPathComponent("menu")
         var components = URLComponents(url: initialMenuURL, resolvingAgainstBaseURL: true)!
+        
         components.queryItems = [URLQueryItem(name: "category", value: categoryName)]
         
         let menuURL = components.url!
@@ -49,6 +53,7 @@ class MenuController {
         var request = URLRequest(url: orderURL)
         request.setValue("application/json", forHTTPHeaderField: "Content-Type")
         let data: [String: [Int]] = ["menuIds": menuIds]
+        
         let jsonEncoder = JSONEncoder()
         let jsonData = try? jsonEncoder.encode(data)
         request.httpBody = jsonData
