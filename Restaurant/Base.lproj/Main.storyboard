@@ -105,13 +105,75 @@
                     <view key="view" contentMode="scaleToFill" id="t8D-Wc-FZV">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="placeholder" translatesAutoresizingMaskIntoConstraints="NO" id="Nxw-hi-QWR">
+                                <rect key="frame" x="8" y="124" width="359" height="167"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FcC-kk-VfL">
+                                <rect key="frame" x="287" y="299" width="80" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="80" id="JlY-Mv-Lkq"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xn8-Ft-E8H">
+                                <rect key="frame" x="8" y="331" width="359" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GdG-hn-0z5">
+                                <rect key="frame" x="8" y="574" width="359" height="36"/>
+                                <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="Add To Order">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="addToOrderButtonTapped:" destination="ZOp-3c-a6T" eventType="touchUpInside" id="NE5-ad-ExN"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="dak-6w-IPc">
+                                <rect key="frame" x="8" y="299" width="271" height="24"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="DF3-MA-j5U" firstAttribute="trailing" secondItem="xn8-Ft-E8H" secondAttribute="trailing" constant="8" id="4ST-JH-jYg"/>
+                            <constraint firstItem="xn8-Ft-E8H" firstAttribute="leading" secondItem="DF3-MA-j5U" secondAttribute="leading" constant="8" id="8FB-QU-oVt"/>
+                            <constraint firstItem="dak-6w-IPc" firstAttribute="leading" secondItem="DF3-MA-j5U" secondAttribute="leading" constant="8" id="8jF-xM-ihB"/>
+                            <constraint firstItem="dak-6w-IPc" firstAttribute="leading" secondItem="DF3-MA-j5U" secondAttribute="leading" constant="8" id="JMJ-QZ-nvH"/>
+                            <constraint firstItem="DF3-MA-j5U" firstAttribute="bottom" secondItem="GdG-hn-0z5" secondAttribute="bottom" constant="8" id="NmQ-tQ-Ary"/>
+                            <constraint firstItem="Nxw-hi-QWR" firstAttribute="top" secondItem="DF3-MA-j5U" secondAttribute="top" constant="8" id="QgA-5h-04j"/>
+                            <constraint firstItem="FcC-kk-VfL" firstAttribute="leading" secondItem="dak-6w-IPc" secondAttribute="trailing" constant="8" id="XnY-tk-irL"/>
+                            <constraint firstItem="Nxw-hi-QWR" firstAttribute="leading" secondItem="DF3-MA-j5U" secondAttribute="leading" constant="8" id="hFV-Pq-Qsq"/>
+                            <constraint firstItem="Nxw-hi-QWR" firstAttribute="height" secondItem="t8D-Wc-FZV" secondAttribute="height" multiplier="0.25" id="jtj-aN-dDE"/>
+                            <constraint firstItem="DF3-MA-j5U" firstAttribute="trailing" secondItem="GdG-hn-0z5" secondAttribute="trailing" constant="8" id="k1p-kT-5pm"/>
+                            <constraint firstItem="DF3-MA-j5U" firstAttribute="trailing" secondItem="FcC-kk-VfL" secondAttribute="trailing" constant="8" id="k7D-OQ-a5b"/>
+                            <constraint firstItem="FcC-kk-VfL" firstAttribute="top" secondItem="Nxw-hi-QWR" secondAttribute="bottom" constant="8" id="oBm-8z-UwV"/>
+                            <constraint firstItem="DF3-MA-j5U" firstAttribute="trailing" secondItem="Nxw-hi-QWR" secondAttribute="trailing" constant="8" id="sTT-ke-KAM"/>
+                            <constraint firstItem="GdG-hn-0z5" firstAttribute="leading" secondItem="DF3-MA-j5U" secondAttribute="leading" constant="8" id="svg-WX-WEA"/>
+                            <constraint firstItem="dak-6w-IPc" firstAttribute="top" secondItem="Nxw-hi-QWR" secondAttribute="bottom" constant="8" id="u78-Ph-JRs"/>
+                            <constraint firstItem="xn8-Ft-E8H" firstAttribute="top" secondItem="dak-6w-IPc" secondAttribute="bottom" constant="8" id="yOv-9p-odY"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="DF3-MA-j5U"/>
                     </view>
+                    <connections>
+                        <outlet property="addToOrderButton" destination="GdG-hn-0z5" id="xH0-jg-WXb"/>
+                        <outlet property="detailTextLabel" destination="xn8-Ft-E8H" id="k1G-vn-hSk"/>
+                        <outlet property="imageView" destination="Nxw-hi-QWR" id="rRB-XW-CeY"/>
+                        <outlet property="priceLabel" destination="FcC-kk-VfL" id="6jR-W0-MPd"/>
+                        <outlet property="titleLabel" destination="dak-6w-IPc" id="krf-KA-cgk"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bTh-SZ-rTA" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2557" y="12"/>
+            <point key="canvasLocation" x="2556" y="11.244377811094454"/>
         </scene>
         <!--Root View Controller-->
         <scene sceneID="xmw-8N-48C">
@@ -195,4 +257,7 @@
             <point key="canvasLocation" x="-524" y="353.9730134932534"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="placeholder" width="100" height="100"/>
+    </resources>
 </document>
