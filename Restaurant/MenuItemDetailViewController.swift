@@ -24,10 +24,11 @@ class MenuItemDetailViewController: UIViewController {
     
     
     @IBAction func addToOrderButtonTapped(_ sender: Any) {
-        UIView.animate(withDuration: 0.3) {
+        UIView.animate(withDuration: 0.4) {
             self.addToOrderButton.transform = CGAffineTransform(scaleX: 3.0, y: 3.0)
             self.addToOrderButton.transform = CGAffineTransform(scaleX: 1.0, y: 1.0)
         }
+        MenuController.shared.order.menuItems.append(menuItem)
     }
     override func viewDidLoad() {
         super.viewDidLoad()
