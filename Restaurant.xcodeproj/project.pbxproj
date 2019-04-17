@@ -20,6 +20,7 @@
 		64B30BE52261ACDC008EE815 /* IntermediaryModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64B30BE42261ACDC008EE815 /* IntermediaryModels.swift */; };
 		64B30BE72261ADA7008EE815 /* Order.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64B30BE62261ADA7008EE815 /* Order.swift */; };
 		64B30BE92261BDC6008EE815 /* MenuController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64B30BE82261BDC6008EE815 /* MenuController.swift */; };
+		64B30BED226596CD008EE815 /* OrderConfirmationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64B30BEC226596CD008EE815 /* OrderConfirmationViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +39,7 @@
 		64B30BE42261ACDC008EE815 /* IntermediaryModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntermediaryModels.swift; sourceTree = "<group>"; };
 		64B30BE62261ADA7008EE815 /* Order.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Order.swift; sourceTree = "<group>"; };
 		64B30BE82261BDC6008EE815 /* MenuController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuController.swift; sourceTree = "<group>"; };
+		64B30BEC226596CD008EE815 /* OrderConfirmationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderConfirmationViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +80,7 @@
 				64ADB8EC22618CA800D7F2D0 /* ViewController.swift */,
 				64ADB8EE22618CA800D7F2D0 /* Main.storyboard */,
 				64B30BE02261A2EC008EE815 /* MenuItemDetailViewController.swift */,
+				64B30BEC226596CD008EE815 /* OrderConfirmationViewController.swift */,
 				64B30BDA22619D0E008EE815 /* CategoryTableViewController.swift */,
 				64B30BDC22619D4D008EE815 /* MenuTableViewController.swift */,
 				64B30BDE22619D69008EE815 /* OrderTableViewController.swift */,
@@ -168,6 +171,7 @@
 				64B30BE52261ACDC008EE815 /* IntermediaryModels.swift in Sources */,
 				64ADB8ED22618CA800D7F2D0 /* ViewController.swift in Sources */,
 				64ADB8EB22618CA800D7F2D0 /* AppDelegate.swift in Sources */,
+				64B30BED226596CD008EE815 /* OrderConfirmationViewController.swift in Sources */,
 				64B30BDB22619D0E008EE815 /* CategoryTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
