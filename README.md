@@ -11,6 +11,6 @@ The app uses the restaurant's database to list the available categories. The use
 
 **Technologies Used:**
 
-Interface Builder, Swift, Xcode, network request with API/JSON
+Interface Builder, Swift, Xcode, API/JSON
 
 
